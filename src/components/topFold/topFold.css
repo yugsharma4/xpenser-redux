@@ -1,0 +1,70 @@
+.topFold__home{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 12px;
+    padding: 12px 0px;
+}
+
+.topFold__searchbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    padding: 4px 4px;
+    
+}
+.topFold__searchbar input{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 12px;
+    padding: 4px 4px;
+    border: none;
+}
+
+
+.topFold__button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: azure;
+}
+.topFold__button :hover{
+    color: rgb(49, 37, 37);
+}
+
+.topFold__button i{
+    display: flex;
+    margin-right: 4px;
+    align-items: center;
+    
+}
+
+.add__topFold{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.add__topFold__button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 2px;
+    color: azure;
+}
+.add__topFold__button:hover{
+    color: rgb(49, 37, 37);;
+}
+
+.add__topFold__button i{
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
