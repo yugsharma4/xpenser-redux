@@ -1,10 +1,18 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { serachExpense } from '../../redux/actions/expenses';
 import "./topFold.css";
 
 const TopFold = () => {
     
     const[search,setSearch] = useState('');
+    const dispatch = useDispatch();
+
+    const handleSearch = (e) => {
+        setSearch(e.target.value);
+        dispatch(serachExpense(e.target.value));
+    }
 
   return (
     <div className='topFold'>
@@ -14,7 +22,7 @@ const TopFold = () => {
         <div className="topFold__home">
             <div className="topFold__searchbar">
             <i className="fi-rr-search"></i>
-                <input type="text" value = {search}  placeholder='Search...'  onChange={(e) => setSearch(e.target.value)} />
+                <input type="text" value = {search}  placeholder='Search...'  onChange={ handleSearch} />
 
             </div>
 

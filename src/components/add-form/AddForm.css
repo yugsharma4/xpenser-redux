@@ -1,0 +1,118 @@
+.add-form{
+    border-radius: 50px;
+    background: #801de2;
+    box-shadow:  20px 20px 60px #8040c0,
+             -20px -20px 60px #8732d6;
+    margin: 6px 12px;
+    padding: 24px;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    min-height: 60vh;
+
+}
+
+.form-item{
+    margin: 12px 0px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+
+}
+.form-item label{
+    background-color: lightblue;
+    padding: 2px 12px;
+    border-radius: 0px 4px 4px 0px;
+    margin-right: 4px;
+}
+.form-item input{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 70%;
+}
+.category-container-parent{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.category{
+    position: relative;
+    width: 40%;
+}
+.category-dropdown{
+    display: flex;
+    color:black;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin: 12px 0px;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.category-dropdown i{
+    display: flex;
+    align-items: center;
+}
+
+.category-container{
+    color: black;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+}
+
+.category-item{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.category-item img{
+    height: 32px;
+    margin-right: 20px;
+}
+.form-add-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-add-button div{
+    display: flex;
+    border: 1px solid black;
+    padding: 4px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-add-button div i{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+@media only screen and (max-width:1024px) {
+    .form-item{
+        width: 100%;
+    }
+    .form-item input{
+        width: 70%;
+    }
+    .amount-input{
+        width: 50% !important;
+    }
+    .category{
+        width: 80%;
+    }
+}
+
+
+
+

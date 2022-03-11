@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router, Route,Routes
 } from "react-router-dom";
 import AddExpense from "./pages/addExpense/index";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route path="/add-expense"  exact element={<AddExpense />} />
      
       </Routes>
-      <div>Footer</div>
+      <Footer />
     </Router>
   );
 }
